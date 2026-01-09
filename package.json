@@ -1,0 +1,48 @@
+{
+  "name": "backend-segunda-vuelta",
+  "version": "1.0.0",
+  "description": "Backend API REST para aplicación móvil de gestión de tareas - Segunda vuelta",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "db:init": "node -e \"require('./database.js'); console.log('Base de datos inicializada'); process.exit(0);\"",
+    "db:reset": "rm -f database.sqlite && npm run db:init",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tasks",
+    "api",
+    "express",
+    "sqlite",
+    "segunda-vuelta",
+    "flutter",
+    "mobile",
+    "rest-api"
+  ],
+  "author": "Fernando",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tu-usuario/segunda-vuelta-backend"
+  },
+  "bugs": {
+    "url": "https://github.com/tu-usuario/segunda-vuelta-backend/issues"
+  },
+  "homepage": "https://github.com/tu-usuario/segunda-vuelta-backend#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
